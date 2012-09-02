@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sunysb.cse549"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".maps.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".maps.LocationDetailEntryActivity"></activity>
+        <activity android:name=".maps.CreateProfileActivity"></activity>
+        <activity android:name=".maps.UpdateScheduleActivity"></activity>
+        <activity android:name=".maps.ListActivity"></activity>
+        <activity android:name=".maps.SetLocationActivity"></activity>
+        <provider
+    	android:authorities="org.sunysb.cse549.contentProviders.ModeContentProvider"
+    	android:name=".contentProviders.ModeContentProvider">   
+		</provider>
+       <uses-library android:name="com.google.android.maps" />  
+       <service android:name=".daemon.DaemonService" />
+    </application>
+
+</manifest>

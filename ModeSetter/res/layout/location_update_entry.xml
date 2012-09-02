@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/EnterLocationDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Location Details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/LocationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterLocationDetailsTextView"
+        android:layout_alignBaseline="@+id/LocationNameEditText"
+        android:layout_alignBottom="@+id/LocationNameEditText"
+        android:layout_alignParentLeft="true"
+        android:text="Location Name" />
+    
+    <EditText
+        android:id="@+id/LocationNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterLocationDetailsTextView"
+        android:layout_toRightOf="@+id/LocationName"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:clickable="false" 
+        android:cursorVisible="false" 
+        android:focusable="false" 
+        android:focusableInTouchMode="false"
+        android:text="@string/defLocation">
+        <requestFocus />
+     </EditText>
+    
+    <TextView
+        android:id="@+id/LongitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LongitudeEditTest"
+        android:layout_alignBottom="@+id/LongitudeEditTest"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LocationName"
+        android:text="Longitude" />
+
+    <EditText
+        android:id="@+id/LongitudeEditTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/LongitudeTextView"
+        android:layout_alignLeft="@+id/LocationNameEditText"
+        android:layout_below="@+id/LocationName"
+        android:layout_alignParentRight="true"
+        android:clickable="false" 
+        android:cursorVisible="false" 
+        android:focusable="false" 
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:text="Enter Longitude" />
+    
+     <TextView
+        android:id="@+id/LatitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LatitudeEditText"
+        android:layout_alignBottom="@+id/LatitudeEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LongitudeTextView"
+        android:text="Latitude" />
+
+    <EditText
+        android:id="@+id/LatitudeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/LatitudeTextView"
+        android:layout_alignLeft="@+id/LongitudeEditTest"
+        android:layout_below="@+id/LongitudeEditTest"
+        android:layout_alignParentRight="true"
+        android:clickable="false" 
+        android:cursorVisible="false" 
+        android:focusable="false" 
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:text="Enter Latitude" />
+    
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DateEditText"
+        android:layout_alignBottom="@+id/DateEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LatitudeTextView"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/DateEditText"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/DateTextView"
+        android:layout_alignLeft="@+id/LongitudeEditTest"
+        android:layout_below="@+id/LatitudeTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="date" />
+    
+    <TextView
+        android:id="@+id/TimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startTime"
+        android:layout_alignBottom="@+id/startTime"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DateTextView"
+        android:text="Start Time" />
+    
+    <EditText
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TimeTextView"
+        android:layout_alignLeft="@+id/LongitudeEditTest"
+        android:layout_below="@+id/DateEditText"
+        android:layout_alignParentRight="true"
+        android:ems="10">
+    </EditText>
+    
+    <TextView
+        android:id="@+id/TimeDurationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TimeDurationEditText"
+        android:layout_alignBottom="@+id/TimeDurationEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TimeTextView"
+        android:text="End Time" />
+    
+    <EditText
+        android:id="@+id/TimeDurationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TimeDurationTextView"
+        android:layout_alignLeft="@+id/LongitudeEditTest"
+        android:layout_below="@+id/startTime"
+        android:layout_alignParentRight="true"
+        android:ems="10">
+    </EditText>
+       
+    <TextView
+        android:id="@+id/ProfileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ProfileSpinner"
+        android:layout_alignBottom="@+id/ProfileSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TimeDurationTextView"
+        android:text="Select Profile" />
+     
+    <Spinner
+        android:id="@+id/ProfileSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ProfileTextView"
+        android:layout_alignLeft="@+id/LongitudeEditTest"
+        android:layout_below="@+id/TimeDurationEditText"
+        android:layout_alignParentRight="true" />
+
+   <Button
+        android:id="@+id/createProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/daily"
+        android:layout_alignBottom="@+id/daily"
+        android:layout_below="@+id/ProfileTextView"
+        android:text="Create New Profile" />
+
+    <CheckBox
+        android:id="@+id/daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/createProfile"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ProfileSpinner"
+        android:text="Daily" />
+ 
+     <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Cancel"
+        android:layout_alignBottom="@+id/Cancel"
+        android:layout_below="@+id/createProfile"
+        android:layout_alignParentLeft="true"      
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/SaveButton"
+        android:layout_below="@+id/daily"
+        android:text="@string/cancel" />
+
+</RelativeLayout>

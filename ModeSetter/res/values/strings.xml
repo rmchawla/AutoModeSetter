@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, NewProjectActivity!</string>
+    <string name="app_name">ModeSetter</string>
+    <string name="table_layout_4_open">Open</string>
+    <string name="table_layout_4_open_shortcut">Open Shortcut</string>
+    <string name="table_layout_4_save">Save</string>
+    <string name="table_layout_4_save_shortcut">Save Shortcut</string>
+    <string name="defLocation">Enter Location</string>
+                       <string name="save">Save</string>
+                       <string name="search">Search</string>
+                       <string name="cancel">Cancel</string> 
+</resources>
